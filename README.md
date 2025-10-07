@@ -1,2 +1,0 @@
-# Shasc
-College website
