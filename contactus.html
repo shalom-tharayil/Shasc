@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sirajul Huda Arts & Science College - Contact Us</title>
+  <style>
+    :root{
+      --brand:#004080;
+      --accent:#003060;
+      --bg:#f4f4f4;
+      --white:#ffffff;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      scroll-behavior:smooth;
+      background:var(--bg);
+      color:#222;
+    }
+
+    /* Top bar / landing */
+    .topbar{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      height:64px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 16px;
+      z-index:60;
+      /* Background is solid white/brand to stand out on a content page */
+      background:var(--brand); 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration: none; /* Remove underline from anchor */
+    }
+
+    .brand img{
+      width:54px;
+      height:54px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--white);
+      box-shadow:0 3px 8px rgba(0,0,0,0.12);
+      background:var(--white);
+    }
+    
+    /* Make the brand text visible on internal pages */
+    .brand span{
+        color:var(--white) !important;
+        font-weight:600; 
+        display:inline !important;
+        font-size: 18px;
+    }
+
+    /* Hamburger and Overlay styles are omitted */
+    .hamburger { display: none; }
+    .overlay { display: none; }
+
+    /* Content Styling for internal pages */
+    main{
+      padding:100px 16px 80px; /* Increased padding to clear fixed topbar */
+      max-width:980px;
+      margin:0 auto;
+      min-height: calc(100vh - 120px);
+    }
+    
+    .page-title {
+        color: var(--brand);
+        font-size: 32px;
+        margin-bottom: 30px;
+        border-bottom: 3px solid var(--accent);
+        padding-bottom: 8px;
+    }
+
+    section.card{
+      background:var(--white);
+      border-radius:10px;
+      padding:18px;
+      margin:28px 0;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      border-left:6px solid var(--brand);
+    }
+    section.card h2{ color:var(--brand); margin-top:0; }
+    ul.plain{ list-style: none; padding-left: 0; }
+    ul.plain li { margin: 12px 0; display: flex; align-items: flex-start; gap: 10px; }
+    ul.plain li strong { min-width: 100px; }
+    
+    .contact-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--brand);
+      flex-shrink: 0;
+    }
+    
+   
+
+    footer{
+      text-align:center;
+      padding:24px 10px;
+      color:#fff;
+      background:var(--brand);
+      border-top:4px solid var(--accent);
+      margin-top:36px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:560px){
+      .page-title{ font-size:26px; }
+      .brand span{ font-size: 16px; }
+      ul.plain li { flex-direction: column; align-items: flex-start; }
+      ul.plain li strong { min-width: auto; }
+      .contact-icon { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a class="brand" href="https://shasc.tiiny.site" aria-label="Go to Home Page">
+      <img src="https://iili.io/KhZt2cu.png" alt="College Logo">
+      <span style="color:#fff; font-weight:600;">Sirajul Huda</span>
+    </a>
+  </div>
+
+  <main role="main" id="pageContent">
+    <h1 class="page-title">Contact Us</h1>
+    
+    <section class="card" aria-labelledby="contact-details-heading">
+      <h2 id="contact-details-heading">General Information</h2>
+      <p>Reach out to us for admission inquiries, academic questions, or administrative support.</p>
+      
+      <ul class="plain">
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-5.6-5.6A19.79 19.79 0 0 1 2 4.18 2 2 0 0 1 4.18 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <strong>Phone:</strong> <a href="tel:9072533305">9072533305</a>
+        </li>
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <strong>Email:</strong> <a href="mailto:dhascndm@gmail.com">dhascndm@gmail.com</a>
+        </li>
+        <li>
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <strong>Address:</strong> Sirajul Huda Arts & Science College, Nadapuram, Kozhikode, Kerala - 673504
+        </li>
+      </ul>
+    </section>
+   
+
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Sirajul Huda Arts & Science College — Not an official site (educational demo)
+  </footer>
+
+  <script>
+    // Only the footer year setting script remains.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
